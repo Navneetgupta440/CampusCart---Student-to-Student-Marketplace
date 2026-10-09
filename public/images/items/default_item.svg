@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="defBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12213A"/>
+      <stop offset="100%" stop-color="#1e3a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#defBg)"/>
+  <!-- Graphic Box / Cart Icon -->
+  <g transform="translate(200, 100)">
+    <rect x="0" y="0" width="200" height="180" rx="24" fill="#1b2a47" stroke="#3068E0" stroke-width="3"/>
+    <!-- Box Lines -->
+    <path d="M 40,60 L 160,60 L 140,140 L 60,140 Z" fill="none" stroke="#34C4CF" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="75" cy="155" r="10" fill="#3068E0"/>
+    <circle cx="125" cy="155" r="10" fill="#3068E0"/>
+    <path d="M 80,95 L 100,115 L 130,80" fill="none" stroke="#20976F" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="300" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="800" font-size="20" fill="#ffffff">CAMPUSCART</text>
+  <text x="300" y="370" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Buy Smart · Sell Easy · Campus Connected</text>
+</svg>

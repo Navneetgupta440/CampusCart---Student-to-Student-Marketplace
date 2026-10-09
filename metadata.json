@@ -1,0 +1,6 @@
+{
+  "name": "CampusCart - Student-to-Student Marketplace",
+  "description": "Buy smart, sell easy, and stay campus connected. A peer-to-peer college marketplace for academic essentials, electronics, books, and student gear.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

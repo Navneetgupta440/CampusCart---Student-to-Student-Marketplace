@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12213A"/>
+      <stop offset="100%" stop-color="#1e3a63"/>
+    </linearGradient>
+    <linearGradient id="bookSpine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#243044"/>
+      <stop offset="50%" stop-color="#3068E0"/>
+      <stop offset="100%" stop-color="#1b2a47"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34C4CF"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bgGrad)"/>
+  <!-- Pattern grid -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="90" x2="600" y2="90"/>
+    <line x1="0" y1="180" x2="600" y2="180"/>
+    <line x1="0" y1="270" x2="600" y2="270"/>
+    <line x1="0" y1="360" x2="600" y2="360"/>
+    <line x1="120" y1="0" x2="120" y2="450"/>
+    <line x1="240" y1="0" x2="240" y2="450"/>
+    <line x1="360" y1="0" x2="360" y2="450"/>
+    <line x1="480" y1="0" x2="480" y2="450"/>
+  </g>
+  <!-- Book Cover -->
+  <g transform="translate(180, 50)">
+    <!-- Shadow -->
+    <rect x="15" y="15" width="230" height="320" rx="8" fill="#0b1322" opacity="0.6"/>
+    <!-- Book pages edge -->
+    <rect x="8" y="8" width="230" height="320" rx="6" fill="#e2e8f0"/>
+    <!-- Main cover -->
+    <rect x="0" y="0" width="225" height="320" rx="6" fill="url(#bookSpine)"/>
+    <!-- Banner on book -->
+    <rect x="0" y="45" width="225" height="75" fill="#0d1829" opacity="0.9"/>
+    <text x="20" y="75" font-family="system-ui, sans-serif" font-weight="800" font-size="16" fill="#34C4CF">DATA STRUCTURES</text>
+    <text x="20" y="98" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#ffffff">&amp; ALGORITHMS IN C++</text>
+    <!-- Visual Tree Diagram -->
+    <g transform="translate(45, 150)" stroke="url(#codeGrad)" stroke-width="2.5" fill="none">
+      <circle cx="70" cy="20" r="14" fill="#12213A"/>
+      <circle cx="35" cy="70" r="12" fill="#12213A"/>
+      <circle cx="105" cy="70" r="12" fill="#12213A"/>
+      <circle cx="15" cy="115" r="9" fill="#12213A"/>
+      <circle cx="55" cy="115" r="9" fill="#12213A"/>
+      <line x1="60" y1="30" x2="45" y2="60"/>
+      <line x1="80" y1="30" x2="95" y2="60"/>
+      <line x1="28" y1="80" x2="20" y2="105"/>
+      <line x1="42" y1="80" x2="50" y2="105"/>
+    </g>
+    <!-- Author / Edition -->
+    <text x="20" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">MARK ALLEN WEISS · 4TH ED</text>
+  </g>
+</svg>

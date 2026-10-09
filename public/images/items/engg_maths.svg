@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mathBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="mathCover" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#831843"/>
+      <stop offset="100%" stop-color="#be185d"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#mathBg)"/>
+  <!-- Book Cover -->
+  <g transform="translate(180, 50)">
+    <rect x="15" y="15" width="230" height="320" rx="8" fill="#020617" opacity="0.6"/>
+    <rect x="8" y="8" width="230" height="320" rx="6" fill="#f1f5f9"/>
+    <rect x="0" y="0" width="225" height="320" rx="6" fill="url(#mathCover)"/>
+    <rect x="0" y="40" width="225" height="85" fill="#500724" opacity="0.9"/>
+    <text x="20" y="70" font-family="system-ui, sans-serif" font-weight="800" font-size="15" fill="#fbcfe8">HIGHER ENGINEERING</text>
+    <text x="20" y="94" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#ffffff">MATHEMATICS</text>
+    <text x="20" y="112" font-family="system-ui, sans-serif" font-weight="500" font-size="11" fill="#f472b6">CALCULUS · VECTORS · SERIES</text>
+    <!-- Mathematical symbols graphic -->
+    <g transform="translate(30, 150)" fill="#fdf2f8" opacity="0.85" font-family="serif" font-size="28">
+      <text x="20" y="40">∫ f(x) dx</text>
+      <text x="95" y="80">∇²ψ = 0</text>
+      <text x="35" y="115">∑ aₙ xⁿ</text>
+    </g>
+    <text x="20" y="295" font-family="system-ui, sans-serif" font-size="11" fill="#fbcfe8">B.S. GREWAL · 44TH EDITION</text>
+  </g>
+</svg>
