@@ -53,18 +53,42 @@ async function startServer() {
     // Dynamic import of Vite in development
     const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
-      server: { middlewareMode: true },
+      server: { middlewareMode: true, hmr: false, ws: false },
       appType: 'spa',
     });
     app.use(vite.middlewares);
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
+  const server = app.listen(PORT, '0.0.0.0', () => {
     console.log(`CampusCart full-stack server running on port ${PORT} [env=${process.env.NODE_ENV || 'development'}]`);
   });
+
+  server.on('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      console.warn(`[Server] Port ${PORT} is temporarily in use. Waiting to rebind...`);
+      setTimeout(() => {
+        server.close();
+        app.listen(PORT, '0.0.0.0', () => {
+          console.log(`CampusCart full-stack server re-bound on port ${PORT}`);
+        });
+      }, 1000);
+    } else {
+      console.error('[Server] Unhandled server error:', err);
+    }
+  });
+
+  const handleShutdown = () => {
+    server.close(() => {
+      process.exit(0);
+    });
+  };
+
+  process.on('SIGTERM', handleShutdown);
+  process.on('SIGINT', handleShutdown);
 }
 
 startServer().catch((err) => {
   console.error('Fatal error starting server:', err);
   process.exit(1);
 });
+
